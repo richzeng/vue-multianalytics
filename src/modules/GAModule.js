@@ -56,6 +56,10 @@ export default class GAModule extends BasicModule {
         ga('require', 'ecommerce')
       }
 
+      // anonymizeIp
+      if (initConf['anonymizeIp']) {
+        ga('set', 'anonymizeIp', true);
+      }
   }
 
 
